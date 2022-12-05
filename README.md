@@ -1,2 +1,5 @@
 # FrontEndMentor
-frontendmentor.io projects.
+
+### 🔸 Newbie :
+- #### 🔹 HTML & CSS :
+  - Product preview card component.
