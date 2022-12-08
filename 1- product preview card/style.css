@@ -1,0 +1,132 @@
+* {
+	box-sizing: border-box;
+	margin :0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: hsl(30, 38%, 92%);
+	font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+	width: 90%;
+	height: 90%;
+	border-radius: 0.6rem;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	background-color: hsl(0, 0%, 100%);
+}
+
+.image {
+	height: 40%;
+	background-image: url("srcs/images/image-product-mobile.jpg");
+	background-size: cover;
+}
+
+.content {
+	padding: 1.6rem;
+	height: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.content .title {
+	text-transform: uppercase;
+	color: hsl(228, 12%, 48%);
+	letter-spacing: 0.3rem;
+	font-size: 0.8rem;
+}
+	
+.content .header {
+	font-family: 'Fraunces', serif;
+	font-weight: bold;
+	font-size: 1.8rem;
+}
+
+.content .text {
+	color: hsl(228, 12%, 48%);
+}
+
+.content div {
+	display: flex;
+}
+
+.content div .price {
+	font-family: 'Fraunces', serif;
+	font-size: 1.8rem;
+	color: hsl(158, 36%, 37%);
+}
+
+.content div .discont {
+	color: hsl(228, 12%, 48%);
+	font-size: 0.9rem;
+	margin: 0.6rem 0 0 1.6rem;
+}
+
+.content button {
+	background-color: hsl(158, 36%, 37%);
+	border: none;
+	border-radius: 0.4rem;
+	padding: 0.8rem;
+	color: hsl(30, 38%, 92%);
+	display: flex;
+	justify-content: center;
+	font-size: 0.9rem;
+	transition: 0.3s ease;
+}
+
+.content button:hover {
+ 	background-color: hsl(212, 21%, 14%);
+}
+
+.content button img {
+	padding-right: 0.7rem;
+}
+
+@media (min-width: 375px) {
+	.container {
+		flex-direction: row;
+		width: 50%;
+		height: 60%;
+	}
+	.container .image {
+		height: 100%;
+		width: 50%;
+		background-image: url("srcs/images/image-product-desktop.jpg");
+		background-size: cover;
+	}
+	.container .content {
+		width: 50%;
+		height: 100%;
+		padding: 1.5rem 2.3rem;
+	}
+	.content .title {
+		font-size: 1.1rem;
+	}
+	.content .header {
+		font-size: 2.4rem;
+	}
+	.content .text {
+		font-size: 1.1rem;
+		line-height: 1.7;
+	}
+	.content div .price {
+		font-size: 2.4rem;
+	}
+	.content div .discont {
+		font-size: 1rem;
+		margin: 0.9rem 0 0 1.6rem;
+	}
+	.content button {
+		padding: 1.2rem;
+		border-radius: 0.5rem;
+	}
+}
